@@ -121,9 +121,6 @@ int main() {
     printf("=== COMPARAÇÕES DAS CARTAS:===\n");
     printf("\n");
 
-    printf("*** Escolha o Primeiro Atributo: ***  \n");
-    printf("\n");
-
     printf("%s X %s\n", nomeCidade1, nomeCidade2);
     printf("1. População\n");
     printf("2. Área\n");
@@ -132,12 +129,11 @@ int main() {
     printf("5. Densidade Demográfica\n");
     printf("6. Sair\n");
     printf("\n");
-    
+    printf("*** Escolha uma Opção Acima: ***  \n");
     scanf("%d", &opcao);
 
     switch (opcao) {
-
-    case 1
+    case 1:
     printf("(ATRIBUTO: POPULAÇÃO)\n");
     
     printf("Carta 01 - %s: %d\n", nomeCidade1, populacao1);
@@ -156,13 +152,13 @@ int main() {
     printf("A cidade vencedora é: %s\n", cidadeVencedora);
      break;
 
-     case 2
+     case 2:
     printf("(ATRIBUTO: ÁREA)\n");
     
     printf("Carta 01 - %s: %.2f\n", nomeCidade1, area1);
     printf("Carta 02 - %s: %.2f\n", nomeCidade2, area2);
     printf("\n");
-   if (area1>area2) {
+    if (area1>area2) {
     printf("Carta 01 venceu!\n");
     strcpy(cidadeVencedora, nomeCidade1);
     } else if (area1<area2) {
@@ -175,11 +171,11 @@ int main() {
     printf("A cidade vencedora é: %s\n", cidadeVencedora);
      break;
 
-    case 3
+    case 3:
     printf("(ATRIBUTO: PIB)\n");
     
-    printf("Carta 01 - %s: %d\n", nomeCidade1, pib1);
-    printf("Carta 02 - %s: %d\n", nomeCidade2, pib2);
+    printf("Carta 01 - %s: %f\n", nomeCidade1, pib1);
+    printf("Carta 02 - %s: %f\n", nomeCidade2, pib2);
     printf("\n");
    if (pib1>pib2) {
     printf("Carta 01 venceu!\n");
@@ -194,7 +190,7 @@ int main() {
     printf("A cidade vencedora é: %s\n", cidadeVencedora);
      break;
 
-     case 4
+     case 4:
     printf("(ATRIBUTO: Numero de Pontos Turisticos)\n");
     
     printf("Carta 01 - %s: %d\n", nomeCidade1, pontosTuristicos1);
@@ -213,7 +209,7 @@ int main() {
     printf("A cidade vencedora é: %s\n", cidadeVencedora);
      break;
 
-     case 5
+     case 5:
     printf("(ATRIBUTO: Desnidade Demografica)\n");
     
     printf("Carta 01 - %s: %d\n", nomeCidade1, densidadepopulacional1);
@@ -232,7 +228,7 @@ int main() {
     printf("A cidade vencedora é: %s\n", cidadeVencedora);
      break;
 
-     case 6
+     case 6:
      printf("Sair\n");
 
      default:
@@ -240,7 +236,6 @@ int main() {
      break;
 
 }
-
     return 0;
 
 }
